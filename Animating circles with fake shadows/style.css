@@ -1,0 +1,27 @@
+body{
+    background: blueviolet;
+  }
+  .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  .circle{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    animation: anim 10s;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform-origin: 400% 50%;
+      transform: rotate(0);
+    }
+    50% {
+      transform-origin: 400% 50%;
+      transform: rotate(360deg);
+    }
+  }
